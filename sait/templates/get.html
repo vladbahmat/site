@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test page</title>
+</head>
+<body>
+    <h1>Оставляйте комментарии и отзывы нашему сайту!</h1>
+    <h1>
+        <form action="" method="get">{% csrf_token %}
+        {% for element in feedbacks %}
+        <p>{{element.comment}}</p>
+        <p>{{element.email}}</p>
+        {% endfor %}
+        </form>
+    </h1>
+</body>
+</html>
