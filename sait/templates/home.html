@@ -7,7 +7,7 @@
 <body>
     <h1>Оставляйте комментарии и отзывы нашему сайту!</h1>
     <h1>
-        <form action="" method="post">{% csrf_token %}
+        <form action="http://127.0.0.1:8000/firstapp" method="post">{% csrf_token %}
         <p>{{form.email}}Емаил</p>
         <p>{{form.comment}}комментарии</p>
         <div>
@@ -15,5 +15,6 @@
         </div>
         </form>
     </h1>
+    <h1><a href="http://127.0.0.1:8000/firstapp/test">Просмотр всех комменатриев</h1>
 </body>
 </html>
